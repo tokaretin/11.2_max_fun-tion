@@ -28,9 +28,14 @@ int max3(int a, int b, int c) {
 int main()
 {
     int a = 3;
-    int b = 5;
+    int b = 3;
 
-    int c = 9;
+    int c = 5;
+
+    if (a == b && b == c) {
+        std::cout << "All equal" << '\n';
+        return 0; 
+    }
 
     std::cout << "Maximum number of two = " << max2(a, b) << '\n';
     std::cout << "Maximum number of three = " << max3(a, b, c) << '\n';
